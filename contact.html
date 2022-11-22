@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cakery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap" 
+rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
+crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <section class="header">
+        <header>
+            <nav>
+                <a href="index.html"><img src="images/cakelogoMuna.png"></a>
+                <div class="text-header">
+                <h1>We Love Cakes</h1></div>
+                <div class="nav-links" id="navLinks">
+                    <div class="nav-fa"><i class="fa-solid fa-xmark" onclick="hideMenu()"></i></div>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="product.html">PRODUCTS</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <div class="nav-fa"><i class="fa-sharp fa-solid fa-bars" onclick="showMenu()"></i></div>
+            </nav>
+        </header>
+        <!-------JavaScript for toggle menu on small screen phones------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</section> 
+
+<!------------------contact us--------------------->
+<section class="contact-us">
+    <h1>Contact Us</h1>
+
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2992.8193317408436!2d2.1663603154261764!3d41.39972977926305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a334562e1967%3A0xe21879d288ada90c!2sLa%20Cava%20Cakery!5e0!3m2!1ssv!2sfr!4v1668811823374!5m2!1ssv!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" 
+        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+<div>
+    <p><strong>Home delivery service</strong>: All the city of Barcelona. More than 7 km with additonal cost.<br>
+        <strong>Place to pick up order</strong>: Via la Costa Avenue. Blue Port gated neighbourhood.
+        <br>We will send you the GPS Location via WhatsApp.
+        <br><strong>Order time: </strong>Medium and Big orders must be placed 2 days before for greater security, processing and availability.</p>
+</div>
+
+    <div class="row">
+        <div class="contact-col">
+            <i class="fa-solid fa-house-user"></i>
+        <span>
+            <h5>Las Ramblas, ZTB Building</h5>
+            <p>Barcelona, Spain</p>
+        </span>
+   <!---- </div>
+   <div>-->
+        <i class="fa-solid fa-phone"></i>
+        <span>
+            <h5>+34612777898</h5>
+            <p>Monday to Saturday, 09AM to 20PM</p>
+        </span>
+
+        <i class="fa-solid fa-envelope"></i>
+        <span>
+            <h5>cakeinfo@cakes.es</h5>
+            <p>Email us your query, please</p>
+        </span>
+    </div>
+    <div class="contact-col">
+
+        <form action="">
+            <input type="text" placeholder="Enter your name" required>
+            <input type="email" placeholder="Enter your email" required>
+            <input type="text" placeholder="Enter your subject" required>
+            <textarea rows="8" placeholder="Write your Order or a Message" required></textarea>
+            <button type="submit" class="box-button">Send Message</button>
+        </form>
+        </div>
+</div>  
+
+<a href="index.html">Back to Start</a>
+</section>  
+
+<!------------------ Footer ----------------->
+
+<section class="footer">
+    <h4>Welcome to Us</h4>
+    <p>We love cakes, and we love that you're here. 
+        <br>Questions? Please, send us an <a href="mailto:email@example.com?subject=Mail from our Website">email.</a></p>
+
+        <div class="footer-email-form">
+            <h5>Join our yummi newsletter</h5>
+            <input type="email" placeholder="Enter your email" id="footer-email">
+            <input type="submit" value="Sign up" id="footer-email-btn">
+        </div>
+
+          <div class="icons">
+            <h5>Follow us</h5>
+            <i class="fa-brands fa-instagram"></i>
+            <a href="https://www.instagram.com/munamii.cakery/" target="_blank">@Cakery</a>
+            <i class="fa-brands fa-facebook"></i>
+            <a href="https://www.facebook.com/munamiicupcakes" target="_blank">CakeryFB</a>
+            <i class="fa-brands fa-pinterest"></i>
+            <a href="https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Fmunamii.com%2F&description=LLeg%C3%A1mos+a+tu+casa%21&media=https%3A%2F%2Fd2j6dbq0eux0bg.cloudfront.net%2Fimages%2F16830190%2F1498589015.jpg" target="_blank">CakeryPin</a>
+          </div>
+          <p><i class="fa-regular fa-heart"></i> wkLex</p>
+</section>
+</body>
+</html>

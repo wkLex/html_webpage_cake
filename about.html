@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cakery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap" 
+rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
+crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <section class="header">
+        <header>
+            <nav>
+                <a href="index.html"><img src="images/cakelogoMuna.png"></a>
+                <div class="text-header">
+                <h1>We Love Cakes</h1></div>
+                <div class="nav-links" id="navLinks">
+                    <div class="nav-fa"><i class="fa-solid fa-xmark" onclick="hideMenu()"></i></div>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="product.html">PRODUCTS</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <div class="nav-fa"></div><i class="fa-sharp fa-solid fa-bars" onclick="showMenu()"></i></div>
+            </nav>
+        </header>
+        <!-------JavaScript for toggle menu on small screen phones------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</section> 
+
+<section class="about-us">
+    <h1>About Us</h1>
+
+    <div class="row">
+        <div class="about-col">
+        <h1>Cake Lovers since 2001</h1>
+        <p>Hi! Welcome to Munamii Cakery!
+            We offer you the most delicious cakes and cupcakes for all kinds of events and celebrations.<br>
+            At Munamii Cakery, each cake, each box of cupcakes that we make has a very special value  for  us.  
+            We  not  only  want  to  bring  a  dessert  to  your  table  but  rather  a  unique experience for you, which will become an unforgettable memory. 
+            We have been in the pastry market for more than 20 years
+         and now we offer you a new way to shop through our website.</p>
+         <a href="product.html" class="box-button">Visit the Cakery webshop</a>
+        </div>
+        <div class="about-col">
+            <img src="images/happybaker1.png" alt="Munamii Baker">
+        </div>
+    </div>
+</section>
+
+<!------------------ Footer ----------------->
+
+<section class="footer">
+    <h4>Welcome to Us</h4>
+    <p>We love cakes, and we love that you're here. 
+        <br>Questions? Please, send us an <a href="mailto:email@example.com?subject=Mail from our Website">email.</a></p>
+
+        <div class="footer-email-form">
+            <h5>Join our yummi newsletter</h5>
+            <input type="email" placeholder="Enter your email" id="footer-email">
+            <input type="submit" value="Sign up" id="footer-email-btn"
+        </div>
+
+          <div class="icons">
+            <h5>Follow us</h5>
+            <i class="fa-brands fa-instagram"></i>
+            <a href="https://www.instagram.com/munamii.cakery/" target="_blank">@Cakery</a>
+            <i class="fa-brands fa-facebook"></i>
+            <a href="https://www.facebook.com/munamiicupcakes" target="_blank">CakeryFB</a>
+            <i class="fa-brands fa-pinterest"></i>
+            <a href="https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Fmunamii.com%2F&description=LLeg%C3%A1mos+a+tu+casa%21&media=https%3A%2F%2Fd2j6dbq0eux0bg.cloudfront.net%2Fimages%2F16830190%2F1498589015.jpg" target="_blank">CakeryPin</a>
+          </div>
+          <p><i class="fa-regular fa-heart"></i> wkLex</p>
+</section>
+</body>
+</html>

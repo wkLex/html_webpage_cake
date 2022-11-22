@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cakery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap" 
+rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
+crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <section class="header">
+        <header>
+            <nav>
+                <a href="index.html"><img src="images/cakelogoMuna.png"></a>
+                <div class="text-header">
+                <h1>We Love Cakes</h1></div>
+                <div class="nav-links" id="navLinks">
+                    <div class="nav-fa"><i class="fa-solid fa-xmark" onclick="hideMenu()"></i></div>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="product.html">PRODUCTS</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <div class="nav-fa"><i class="fa-sharp fa-solid fa-bars" onclick="showMenu()"></i></div>
+            </nav>
+        </header>
+        <!-------JavaScript for toggle menu on small screen phones------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</section> 
+
+
+<!---------------product page --------------->
+
+<section class="product">
+
+    <section class="category">
+        <ul>
+      <a href="#cupcake">Cupcakes</a>
+       <br>
+       <a href="#cake">Cakes</a>
+    </ul>
+    </section>
+    
+    <h1>The Cakery shop</h1>
+    <hr>
+    <section class="cupcake">
+        <h2 id="cupcake">Cupcakes</h2>
+
+    <div class="row">
+        <div class="product-col">
+            <h3>Carrot Walnut</h3>
+            <img src="images/cupcake/cupcake-carrot-walnut1.jpg" class="responsive">
+            <p>A little joy and great taste</p>
+            <p>Price: 3 euro</p>
+            <a href="" class="box-button">Buy</a>
+        </div>
+        <div class="product-col">
+            <h3>Chocolate Vanilla</h3>
+            <img src="images/cupcake/cupcake-chocolate-vanilla2.jpg" class="responsive">
+            <p>A little joy and great taste</p>
+            <p>Price: 3 euro</p>
+            <a href="" class="box-button">Buy</a>
+        </div>
+        <div class="product-col">
+            <h3>Red Velvet</h3>
+            <img src="images/cupcake/cupcake-red-velvet4.jpg" class="responsive">
+            <p>More joy and lovely taste</p>
+            <p>Price: 3 euro</p>
+            <a href="" class="box-button">Buy</a>
+        </div>
+        <div class="product-col">
+            <h3>Birthday Cupcake</h3>
+            <img src="images/cupcake/cupcake-birthdayparty3.jpg" class="responsive">
+            <p>A lot of joy and happy taste for everyone</p>
+            <p>Price: 3 euro</p>
+            <a href="" class="box-button">Buy</a>
+        </div>
+        </div>
+
+        <div class="row">
+            <div class="product-col">
+                <h3>Triple Coconut</h3>
+                <img src="images/cupcake/cupcake-triple-coconut5.jpg" class="responsive">
+                <p>A little joy and great taste</p>
+                <p>Price: 3 euro</p>
+                <a href="" class="box-button">Buy</a>
+            </div>
+            <div class="product-col">
+                <h3>Yumfetti</h3>
+                <img src="images/cupcake/cupcake-yumfetti6.jpg" class="responsive">
+                <p>A little joy and great taste</p>
+                <p>Price: 3 euro</p>
+                <a href="" class="box-button">Buy</a>
+            </div>
+            <div class="product-col">
+                <h3>Chocolate Vegan</h3>
+                <img src="images/cupcake/cupcake-chocolate-vegan8.jpg" class="responsive">
+                <p>More joy and lovely taste</p>
+                <p>Price: 3 euro</p>
+                <a href="" class="box-button">Buy</a>
+            </div>
+            <div class="product-col">
+                <h3>Cherry Glutenfree</h3>
+                <img src="images/cupcake/cupcake-gluten-free-cherries7.jpg" class="responsive">
+                <p>A lot of joy and happy taste</p>
+                <p>Price: 3 euro</p>
+                <a href="" class="box-button">Buy</a>
+            </div>
+            </div>
+        </section>
+<hr> <br>
+        <section class="cake">
+            <h2 id="cake">Cakes</h2>
+            <div class="row">
+                <div class="product-col">
+                    <h3>Rose Delight</h3>
+                    <img src="images/torta/tortaRose1.jpg" class="responsive">
+                    <p>A little joy and great taste</p>
+                    <p>Price: 35 euro</p>
+                    <a href="" class="box-button">Buy</a>
+                </div>
+                <div class="product-col">
+                    <h3>Strawberry Chocolate</h3>
+                    <img src="images/torta/tortaChocolate2.jpg" class="responsive">
+                    <p>A little joy and great taste</p>
+                    <p>Price: 35 euro</p>
+                    <a href="" class="box-button">Buy</a>
+                </div>
+                <div class="product-col">
+                    <h3>Happy Rose</h3>
+                    <img src="images/torta/tortaHappyRose3.jpg" class="responsive">
+                    <p>More joy and lovely taste</p>
+                    <p>Price: 35 euro</p>
+                    <a href="" class="box-button">Buy</a>
+                </div>
+                <div class="product-col">
+                    <h3>Red Roses</h3>
+                    <img src="images/torta/tortaRosesRed4.jpg" class="responsive">
+                    <p>A lot of joy and happy taste for everyone</p>
+                    <p>Price: 35 euro</p>
+                    <a href="" class="box-button">Buy</a>
+                </div>
+                </div>
+                <div class="row">
+                    <div class="product-col">
+                        <h3>Valentin</h3>
+                        <img src="images/torta/tortaValentin5.jpg" class="responsive">
+                        <p>A little joy and great taste</p>
+                        <p>Price: 35 euro</p>
+                        <a href="" class="box-button">Buy</a>
+                    </div>
+                    <div class="product-col">
+                        <h3>Happy Chocolate</h3>
+                        <img src="images/torta/tortaChocolateHappy7.jpg" class="responsive">
+                        <p>A lot of joy and happy taste for everyone</p>
+                        <p>Price: 35 euro</p>
+                        <a href="" class="box-button">Buy</a>
+                    </div>
+                    <div class="product-col">
+                        <h3>Rose Roses</h3>
+                        <img src="images/torta/tortaRoseRosa8.jpg" class="responsive">
+                        <p>A lot of joy and happy taste for everyone</p>
+                        <p>Price: 35 euro</p>
+                        <a href="" class="box-button">Buy</a>
+                    </div>
+                    <div class="product-col">
+                        <h3>CatCake</h3>
+                        <img src="images/torta/tortaCat6.jpg" class="responsive">
+                        <p>A lot of joy and happy taste for everyone</p>
+                        <p>Price: 35 euro</p>
+                        <a href="" class="box-button">Buy</a>
+                    </div>
+                    </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <a href="index.html">Back to Start</a>
+    <br>
+    <br>
+</section>
+<!------------------ Footer ----------------->
+
+<section class="footer">
+    <h4>Welcome to Us</h4>
+    <p>We love cakes, and we love that you're here. 
+        <br>Questions? Please, send us an <a href="mailto:email@example.com?subject=Mail from our Website">email.</a></p>
+
+        <div class="footer-email-form">
+            <h5>Join our yummi newsletter</h5>
+            <input type="email" placeholder="Enter your email" id="footer-email">
+            <input type="submit" value="Sign up" id="footer-email-btn">
+        </div>
+
+          <div class="icons">
+            <h5>Follow us</h5>
+            <i class="fa-brands fa-instagram"></i>
+            <a href="https://www.instagram.com/munamii.cakery/" target="_blank">@Cakery</a>
+            <i class="fa-brands fa-facebook"></i>
+            <a href="https://www.facebook.com/munamiicupcakes" target="_blank">CakeryFB</a>
+            <i class="fa-brands fa-pinterest"></i>
+            <a href="https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Fmunamii.com%2F&description=LLeg%C3%A1mos+a+tu+casa%21&media=https%3A%2F%2Fd2j6dbq0eux0bg.cloudfront.net%2Fimages%2F16830190%2F1498589015.jpg" target="_blank">CakeryPin</a>
+          </div>
+          <p><i class="fa-regular fa-heart"></i> wkLex</p>
+</section>
+</body>
+</html>
